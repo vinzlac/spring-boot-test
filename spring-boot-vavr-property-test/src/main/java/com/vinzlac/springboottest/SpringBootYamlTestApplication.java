@@ -7,17 +7,19 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Import;
 
 @SpringBootApplication
 @Import({SpaceConfigPropertyConverter.class})
+@EnableConfigurationProperties(ServerConfig.class)
 @Slf4j
-public class SpringBootTestApplication implements CommandLineRunner {
+public class SpringBootYamlTestApplication implements CommandLineRunner {
 
   @Autowired ServerConfig serverConfig;
 
   public static void main(String[] args) {
-    SpringApplication.run(SpringBootTestApplication.class, args);
+    SpringApplication.run(SpringBootYamlTestApplication.class, args);
   }
 
   @Override
