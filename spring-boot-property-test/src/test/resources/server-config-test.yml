@@ -1,0 +1,5 @@
+server:
+    address:
+        ip: 192.168.0.2
+    resources_path:
+        imgs: /root/img2s

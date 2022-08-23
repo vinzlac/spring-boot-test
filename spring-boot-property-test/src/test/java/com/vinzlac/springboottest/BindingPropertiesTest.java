@@ -16,7 +16,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 @ExtendWith(SpringExtension.class)
 @EnableConfigurationProperties(value = ServerConfig.class)
 @TestPropertySource("classpath:server-config-test.properties")
-public class BindingPropertiesToUserDefinedPOJOUnitTest {
+public class BindingPropertiesTest {
 
 	@Autowired
 	private ServerConfig serverConfig;

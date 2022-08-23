@@ -31,6 +31,6 @@ public class PropertyValidationUnitTest {
 	@Test
 	void whenBindingPropertiesToValidatedBeans_thenConstrainsAreChecked() {
 		assertEquals(0, propertyValidator.validate(mailConfig.getPropertiesMap()).size());
-		//assertEquals(0, propertyValidator.validate(mailConfig.getMail()).size());
+		assertEquals(0, propertyValidator.validate(mailConfig.getMail()).size());
 	}
 }

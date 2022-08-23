@@ -1,0 +1,12 @@
+server:
+    address:
+        ip: 192.168.0.2
+    resources_path:
+        imgs: /root/img2s
+    data:
+        key1:
+            id: "1200-178"
+            title: title1
+        key2:
+            id: "1300-179"
+            title: title2
