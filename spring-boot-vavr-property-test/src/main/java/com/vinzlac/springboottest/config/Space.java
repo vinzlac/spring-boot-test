@@ -7,11 +7,11 @@ import lombok.Data;
 import static io.vavr.control.Option.none;
 
 @Data
-//@Builder(toBuilder = true)
+@Builder(toBuilder = true)
 public class Space {
   SpaceId id;
   String title;
-//  @Builder.Default
 
-//  Option<String> type = none();
+  @Builder.Default
+  Option<String> type = none();
 }

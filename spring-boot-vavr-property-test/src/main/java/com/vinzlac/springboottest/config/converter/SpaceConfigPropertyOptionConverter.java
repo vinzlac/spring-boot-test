@@ -8,8 +8,8 @@ import org.springframework.stereotype.Component;
 
 import java.util.Objects;
 
-@Component
-@ConfigurationPropertiesBinding
+//@Component
+//@ConfigurationPropertiesBinding
 // To AVOID:
 // Failed to bind properties under 'infra.t2s.recommendations.same-brand.brands.chanel.id' to
 // com.ggl.merch.t2s.model.SpaceId:
